@@ -27,6 +27,16 @@ class ViewController: UIViewController {
     @objc func touchedScreen(touch: UITapGestureRecognizer) {
         
         let touchPoint = touch.location(in: self.view)
+        let yChange2 = (touchPoint.y / imageView.center.y) + 1
+        let yChange = touchPoint.y - imageView.center.y
+        let xChange = touchPoint.x - imageView.center.x
+
+        UIView.animate(withDuration: 1, delay: 0, options: [] , animations: {
+            
+            self.imageView.transform = CGAffineTransform(scaleX: 1, y: yChange2)
+            self.imageView.transform = CGAffineTransform(translationX: xChange , y: yChange )
+         
+        })
     }
     
 }
