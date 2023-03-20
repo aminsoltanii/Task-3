@@ -17,17 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NJ9-zN-6IF">
-                                <rect key="frame" x="77" y="362" width="239" height="153"/>
+                                <rect key="frame" x="45" y="362" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="YrC-OG-6WN"/>
+                                    <constraint firstAttribute="height" constant="100" id="ays-rP-CVu"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NJ9-zN-6IF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="Ov0-IJ-8ah"/>
-                            <constraint firstItem="NJ9-zN-6IF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="PLS-Rt-ccR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NJ9-zN-6IF" secondAttribute="trailing" constant="77" id="Zqc-g8-6kA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NJ9-zN-6IF" secondAttribute="bottom" constant="303" id="nk6-ra-uqh"/>
-                            <constraint firstItem="NJ9-zN-6IF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybn-je-i2o"/>
+                            <constraint firstItem="NJ9-zN-6IF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="7KZ-4o-usf"/>
+                            <constraint firstItem="NJ9-zN-6IF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="qWx-lF-PRM"/>
                         </constraints>
                     </view>
                     <connections>
