@@ -20,6 +20,9 @@ class ViewController: UIViewController {
             view.addGestureRecognizer(tap)
         imageView.backgroundColor = .systemGreen
         
+        imageView.setupHexagonView()
+        
+        
         
         
     }
@@ -27,7 +30,7 @@ class ViewController: UIViewController {
     @objc func touchedScreen(touch: UITapGestureRecognizer) {
         
         let touchPoint = touch.location(in: self.view)
-        let yChange2 = (touchPoint.y / imageView.center.y) + 1
+        let yChange2 = 3 * (touchPoint.y / imageView.center.y) + 1
         let yChange = touchPoint.y - imageView.center.y
         let xChange = touchPoint.x - imageView.center.x
 
@@ -37,6 +40,7 @@ class ViewController: UIViewController {
             self.imageView.transform = CGAffineTransform(translationX: xChange , y: yChange )
          
         })
+        
     }
     
 }
